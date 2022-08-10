@@ -1,0 +1,2 @@
+# deltaNN
+Discontinuous Neural Networks
