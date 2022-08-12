@@ -29,8 +29,7 @@ Fig. 1: Examples of discontinuous activation functions (i.e.,
 ## Table of Contents
 - [License](https://github.com/Fra0013To/deltaNN/blob/main/README.md#license)
 - [Requirements](https://github.com/Fra0013To/deltaNN/blob/main/README.md#requirements)
-- [Getting Started](https://github.com/Fra0013To/deltaNN/blob/README.md#getting-started)
-  - [Inputs/Outputs Description](https://github.com/Fra0013To/deltaNN/blob/main/README.md#inputsoutputs-description)
+- [Getting Started](https://github.com/Fra0013To/deltaNN/blob/main/README.md#getting-started)
   - [Layer Initialization](https://github.com/Fra0013To/deltaNN/blob/main/README.md#layer-initialization)
   - [Run the Example](https://github.com/Fra0013To/deltaNN/blob/main/README.md#run-the-example)
 - [Citation](https://github.com/Fra0013To/deltaNN/blob/main/README.md#citation)
