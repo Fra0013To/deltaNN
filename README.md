@@ -22,6 +22,7 @@ refer to learnable discontinuities.
 
 ![Examples of discontinuous activation functions (i.e., 
 "classic" a.f. plus a multiple of Heaviside](https://i.imgur.com/dbHNZAu.jpg)
+
 Fig. 1: Examples of discontinuous activation functions (i.e., 
 "classic" a.f. plus a multiple of _H_.
 
