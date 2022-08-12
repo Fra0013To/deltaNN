@@ -5,11 +5,6 @@ by [Francesco Della Santa](https://www.researchgate.net/profile/Francesco-Della-
 In this repository, we publish the code used to implement the Discontinuous Neural Networks (&#948;NNs) presented in the paper
 _Discontinuous Neural Networks and Discontinuity Learning_, available soon in Journal of Computational and Applied Mathematics (accepted for publication).
 
-**ATTENTION:** the github page is under construction. The code will be available soon.
-
-
---------------------------------
-
 In the article we define a novel typology of Neural Network layers endowed with
 new learnable parameters and discontinuities in the space of the activations.
 These layers allow to create a new kind of Neural Networks, whose main property
