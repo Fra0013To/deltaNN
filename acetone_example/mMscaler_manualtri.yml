@@ -1,0 +1,97 @@
+data_max_: !!python/object/apply:numpy.core.multiarray._reconstruct
+  args:
+  - &id001 !!python/name:numpy.ndarray ''
+  - !!python/tuple
+    - 0
+  - !!binary |
+    Yg==
+  state: !!python/tuple
+  - 1
+  - !!python/tuple
+    - 3
+  - &id002 !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - false
+    - true
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - false
+  - !!binary |
+    AAAAAAAwgUAAAAAAAAAkQJqZmZmZiYxA
+data_min_: !!python/object/apply:numpy.core.multiarray._reconstruct
+  args:
+  - *id001
+  - !!python/tuple
+    - 0
+  - !!binary |
+    Yg==
+  state: !!python/tuple
+  - 1
+  - !!python/tuple
+    - 3
+  - *id002
+  - false
+  - !!binary |
+    AAAAAABQZkA1HOoFDIPDPgAAAAAAAAAA
+data_range_: !!python/object/apply:numpy.core.multiarray._reconstruct
+  args:
+  - *id001
+  - !!python/tuple
+    - 0
+  - !!binary |
+    Yg==
+  state: !!python/tuple
+  - 1
+  - !!python/tuple
+    - 3
+  - *id002
+  - false
+  - !!binary |
+    AAAAAAA4d0Doz/Ox//8jQJqZmZmZiYxA
+feature_range: &id003 !!python/tuple
+- 0
+- 1
+min_: !!python/object/apply:numpy.core.multiarray._reconstruct
+  args:
+  - *id001
+  - !!python/tuple
+    - 0
+  - !!binary |
+    Yg==
+  state: !!python/tuple
+  - 1
+  - !!python/tuple
+    - 3
+  - *id002
+  - false
+  - !!binary |
+    WVJHJ0LA3r+75n22EziPvgAAAAAAAAAA
+n_features_in_: 3
+n_samples_seen_: 60
+params:
+  clip: false
+  copy: true
+  feature_range: *id003
+scale_: !!python/object/apply:numpy.core.multiarray._reconstruct
+  args:
+  - *id001
+  - !!python/tuple
+    - 0
+  - !!binary |
+    Yg==
+  state: !!python/tuple
+  - 1
+  - !!python/tuple
+    - 3
+  - *id002
+  - false
+  - !!binary |
+    mKEdxhcNZj8VP4D9mZm5P1Y9V2L58FE/
