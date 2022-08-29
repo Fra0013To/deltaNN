@@ -13,7 +13,7 @@ but also to learn and detect the discontinuity interfaces.
 The main idea behind learnable discontinuities for NNs is to apply the effects
 of a bias "outside" the activation function only when the inputs are non-negative; i.e., adding a multiple of the Heaviside 
 function $\mathcal{H}$, applied to the layer inputs:
-$$\mathcal{L}(\boldsymbol{x}) = \boldsymbol{f}\left( W^T\boldsymbol{x} + \boldsymbol{b}\right) + \boldsymbol{\varepsilon}\odot\boldsymbol{\mathcal{H}}\left( W^T\boldsymbol{x} + \boldsymbol{b}\right)\,.$$
+$$\mathcal{L}(\boldsymbol{x}) = \boldsymbol{f}\left( W^T\boldsymbol{x} + \boldsymbol{b}\right) + \boldsymbol{\varepsilon}\odot\boldsymbol{\mathcal{H}}\left( W^T\boldsymbol{x} + \boldsymbol{b}\right) .$$
 
 Thanks to this new bias, the NN has a new vector of trainable parameters $\boldsymbol{\varepsilon}$ that introduce 
 discontinuities in the function of the layer and, then, in the function of the NN. 
