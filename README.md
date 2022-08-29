@@ -2,8 +2,7 @@
 
 by [Francesco Della Santa](https://www.researchgate.net/profile/Francesco-Della-Santa) and [Sandra Pieraccini](https://www.researchgate.net/profile/Sandra-Pieraccini).
 
-In this repository, we publish the code used to implement the Discontinuous Neural Networks (&#948;NNs) presented in the paper
-_Discontinuous Neural Networks and Discontinuity Learning_, available soon in Journal of Computational and Applied Mathematics (accepted for publication).
+In this repository, we publish the code used to implement the Discontinuous Neural Networks (&#948;NNs) presented in the paper _Discontinuous neural networks and discontinuity learning_, Journal of Computational and Applied Mathematics, 2023, 419(114678), https://doi.org/10.1016/j.cam.2022.114678.
 
 In the article we define a novel typology of Neural Network layers endowed with
 new learnable parameters and discontinuities in the space of the activations.
@@ -12,19 +11,21 @@ is to be discontinuous, able not only to approximate discontinuous functions
 but also to learn and detect the discontinuity interfaces.
 
 The main idea behind learnable discontinuities for NNs is to apply the effects
-of a bias "outside" the activation function only when the inputs are non-negative (i.e., using the Heaviside 
-_H_ function). 
-Thanks to this new bias, the NN has a new trainable parameter that introduces a 
-discontinuity in the function of the layer and, then, in the function of the NN. 
-The discontinuity introduced depends both on the new
+of a bias "outside" the activation function only when the inputs are non-negative; i.e., adding a multiple of the Heaviside 
+function $\mathcal{H}$, applied to the layer inputs:
+$$\mathcal{L}(\boldsymbol{x}) = \boldsymbol{f}\left( W^T\boldsymbol{x} + \boldsymbol{b}\right) + \boldsymbol{\varepsilon}\odot\boldsymbol{\mathcal{H}}\left( W^T\boldsymbol{x} + \boldsymbol{b}\right)\,.$$
+
+Thanks to this new bias, the NN has a new vector of trainable parameters $\boldsymbol{\varepsilon}$ that introduce 
+discontinuities in the function of the layer and, then, in the function of the NN. 
+The discontinuities introduced depend both on the new
 parameters and on the weights and biases of the NN; for this reason we will
 refer to learnable discontinuities.
 
 ![Examples of discontinuous activation functions (i.e., 
-"classic" a.f. plus a multiple of Heaviside](https://i.imgur.com/dbHNZAu.jpg)
+"classic" a.f. plus a multiple of Heaviside](https://ars.els-cdn.com/content/image/1-s2.0-S0377042722003430-gr2_lrg.jpg)
 
-Fig. 1: Examples of discontinuous activation functions (i.e., 
-"classic" a.f. plus a multiple of _H_).
+Fig. 1: One-dimensional examples of discontinuous activation functions (i.e., 
+"classic" a.f. plus a multiple of $\mathcal{H}$).
 
 ## Table of Contents
 - [License](https://github.com/Fra0013To/deltaNN/blob/main/README.md#license)
@@ -106,34 +107,39 @@ for the training example:
 
 ## Citation
 If you find discontinuous NNs useful in your research, please cite:
-#### BibTeX
-> @Article{deltaNNs_2022,  
-> AUTHOR = {{Della Santa}, Francesco and Pieraccini, Sandra},  
-> TITLE = {Discontinuous Neural Networks and Discontinuity Learning},  
-> JOURNAL = {Journal of Computational and Applied Mathematics},  
-> VOLUME = {},  
-> YEAR = {2022},  
-> NUMBER = {},  
-> ARTICLE-NUMBER = {},  
-> ISSN = {},  
-> DOI = {}   
-> NOTE = {to appear (accepted for publication)}
-> }
+#### BibTeX   
+> @article{DELLASANTA2023114678,    
+> title = {Discontinuous neural networks and discontinuity learning},   
+> journal = {Journal of Computational and Applied Mathematics},   
+> volume = {419},   
+> pages = {114678},   
+> year = {2023},    
+> issn = {0377-0427},   
+> doi = {https://doi.org/10.1016/j.cam.2022.114678},    
+> url = {https://www.sciencedirect.com/science/article/pii/S0377042722003430},    
+> author = {Francesco {Della Santa} and Sandra Pieraccini},   
+> keywords = {Discontinuous functions, Neural networks, Deep learning, Automatic detection of discontinuity interface},   
+> abstract = {In the framework of discontinuous function approximation and discontinuity interface detection, we consider an approach involving Neural Networks. In particular, we define a novel typology of Neural Network layers endowed with new learnable parameters and discontinuities in the space of the activations. These layers allow to create a new kind of Neural Networks, whose main property is to be discontinuous, able not only to approximate discontinuous functions but also to learn and detect the discontinuity interfaces. A sound theoretical analysis concerning the properties of the new discontinuous layers is performed, and some tests on discontinuous functions are proposed, in order to assess the potential of such instruments.}    
+> }   
 #### RIS
-> TY  - EJOU    
-> AU  - Della Santa, Francesco  
-> AU  - Pieraccini, Sandra  
-> TI  - Discontinuous Neural Networks and Discontinuity Learning  
-> T2  - Journal of Computational and Applied Mathematics   
-> PY  - 2022   
-> VL  -     
-> IS  -     
-> SN  -     
-> KW  - Discontinuous Functions     
-> KW  - Neural Networks     
-> KW  - Deep Learning   
-> KW  - Automatic Detection of Discontinuity Interface  
-> DO  -   
+> TY  - JOUR    
+> T1  - Discontinuous neural networks and discontinuity learning    
+> AU  - Della Santa, Francesco    
+> AU  - Pieraccini, Sandra    
+> JO  - Journal of Computational and Applied Mathematics    
+> VL  - 419   
+> SP  - 114678    
+> PY  - 2023    
+> DA  - 2023/02/01/   
+> SN  - 0377-0427   
+> DO  - https://doi.org/10.1016/j.cam.2022.114678   
+> UR  - https://www.sciencedirect.com/science/article/pii/S0377042722003430   
+> KW  - Discontinuous functions   
+> KW  - Neural networks   
+> KW  - Deep learning   
+> KW  - Automatic detection of discontinuity interface    
+> AB  - In the framework of discontinuous function approximation and discontinuity interface detection, we consider an approach involving Neural Networks. In particular, we define a novel typology of Neural Network layers endowed with new learnable parameters and discontinuities in the space of the activations. These layers allow to create a new kind of Neural Networks, whose main property is to be discontinuous, able not only to approximate discontinuous functions but also to learn and detect the discontinuity interfaces. A sound theoretical analysis concerning the properties of the new discontinuous layers is performed, and some tests on discontinuous functions are proposed, in order to assess the potential of such instruments.   
+> ER  -     
 
 ## Update
 - 2022.08.11: Repository creation.
